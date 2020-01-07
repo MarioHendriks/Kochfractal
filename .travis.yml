@@ -9,8 +9,8 @@ jobs:
 after_success:
   - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
-  - ./send.sh success $https://discordapp.com/api/webhooks/664069203757629460/DZTfqwtS_aqRiqAwE46em_LplfjZpsvEGqv-Wuy4Oc_WfZ4b2-kPUWCEvp4GxQynxK7R
+  - ./send.sh success https://discordapp.com/api/webhooks/664069203757629460/DZTfqwtS_aqRiqAwE46em_LplfjZpsvEGqv-Wuy4Oc_WfZ4b2-kPUWCEvp4GxQynxK7R
 after_failure:
   - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
-  - ./send.sh failure $https://discordapp.com/api/webhooks/664069203757629460/DZTfqwtS_aqRiqAwE46em_LplfjZpsvEGqv-Wuy4Oc_WfZ4b2-kPUWCEvp4GxQynxK7R
+  - ./send.sh failure https://discordapp.com/api/webhooks/664069203757629460/DZTfqwtS_aqRiqAwE46em_LplfjZpsvEGqv-Wuy4Oc_WfZ4b2-kPUWCEvp4GxQynxK7R
