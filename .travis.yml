@@ -3,7 +3,8 @@ language: java
 jobs:
   include:
     - stage: Test
-    - script: mvn clean test
+      script: 
+        - mvn clean test
 
 
 after_success:
